@@ -3,15 +3,12 @@ Application gestion de magasin réalisé avec Java + Swing + JDBC + MariaDB
 
 Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les éléments suivants sont installés et configurés :
 
-1. Avoir Java 26
-- Téléchargez Java 26 depuis le site officiel Oracle ou OpenJDK.
-- Vérifiez l'installation en écrivant dans un terminal la commande suivante : 
-`java -version`
+### Pré-requis
+- Avoir Java 26
+- Wamp ou Xampp
 
-- vous devriez voir la version de Java, si vous avez Java 26 alors vous pouvez continuer.
-
-2. Installer WampServer ou Xampp
-- Exécuter WampServer ou Xampp, s'assurer que dans les paramètres vous autorisez MySQL et MariaDB
+1. Exécuter WampServer ou Xampp
+- s'assurer que dans les paramètres vous autorisez MySQL et MariaDB
 
 3. Sur un navigateur, faites `localhost`.
 - Vous devriez voir la page d'accueil de Wamp ou Xampp, ensuite cliquez sur phpmyadmin
@@ -24,8 +21,8 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 6. Si cela a fonctionné, vous devriez voir l'interface phpmyadmin.
 - Vous devriez voir en haut un onglet "Importer", cliquer dessus.
 - Dans la partie Fichier à importer, cliquez sur Choisir un fichier.
-- Naviguez dans le dossier ProjetJava-Master, vous devriez voir à l'intérieur un fichier data.sql 
-- Cliquez sur data.sql.
+- Naviguez dans le dossier ProjetJava-Master, vous devriez voir à l'intérieur un fichier `data.sql`
+- Cliquez sur `data.sql`.
 - Revenez sur l'interface phpmyadmin, descendez tout en bas et cliquer sur Importer.
 - La base de données magasin est créé, les tables sont créées et des données sont insérées dans les tables.
 
