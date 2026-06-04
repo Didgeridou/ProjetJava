@@ -5,9 +5,10 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 
 1. Avoir Java 26
 - Téléchargez Java 26 depuis le site officiel Oracle ou OpenJDK.
-- Vérifiez l'installation en écrivant dans un terminal la commande suivante : java -version
+- Vérifiez l'installation en écrivant dans un terminal la commande suivante : 
+`java -version`
 
-- vous devriez obtenir la version de Java
+- vous devriez voir la version de Java, si vous avez Java 26 alors vous pouvez continuer.
 
 2. Installer WampServer ou Xampp
 - Exécuter WampServer, s'assurer que dans les paramètres vous autorisez MySQL et MariaDB
@@ -29,4 +30,4 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 - Revenez sur l'interface phpmyadmin, descendez tout en bas et cliquer sur Importer.
 - La base de données magasin est créé, les tables sont créées et des données sont insérées dans les tables.
 
-3. Exécuter ProjetJava-GestionMagasin.jar
+3. Exécuter `ProjetJava-GestionMagasin.jar`
