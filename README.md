@@ -10,15 +10,15 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 1. Exécuter WampServer ou Xampp
 - s'assurer que dans les paramètres vous autorisez MySQL et MariaDB
 
-3. Sur un navigateur, faites `localhost`.
+2. Sur un navigateur, faites `localhost`.
 - Vous devriez voir la page d'accueil de Wamp ou Xampp, ensuite cliquez sur phpmyadmin
 
-5. Vous devriez atterir sur la page de connexion. 
+3. Vous devriez atterir sur la page de connexion. 
 - Entrez comme identifiant `root` et laissez le mot de passe vide.
 - Pour le choix de serveur, prendre MariaDB.
 - Cliquez sur Connexion.
 
-6. Si cela a fonctionné, vous devriez voir l'interface phpmyadmin.
+4. Si cela a fonctionné, vous devriez voir l'interface phpmyadmin.
 - Vous devriez voir en haut un onglet "Importer", cliquer dessus.
 - Dans la partie Fichier à importer, cliquez sur Choisir un fichier.
 - Naviguez dans le dossier ProjetJava-Master, vous devriez voir à l'intérieur un fichier `data.sql`
@@ -26,7 +26,7 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 - Revenez sur l'interface phpmyadmin, descendez tout en bas et cliquer sur Importer.
 - La base de données magasin est créé, les tables sont créées et des données sont insérées dans les tables.
 
-3. Exécuter `ProjetJava-GestionMagasin.jar`
+. Exécuter `ProjetJava-GestionMagasin.jar`
 
 ### État du projet
 Fonctions basiques (ajout, supprimer, modifier) mais manque la partie Caisse, Commande, Fournisseur, Magasin
