@@ -6,6 +6,7 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 ### Pré-requis
 - Avoir Java 26
 - Wamp ou Xampp
+- `git clone https://github.com/Didgeridou/ProjetJava.git`
 
 1. Exécuter WampServer ou Xampp
 - s'assurer que dans les paramètres vous autorisez MySQL et MariaDB
