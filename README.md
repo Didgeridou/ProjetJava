@@ -14,11 +14,10 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 - Exécuter WampServer ou Xampp, s'assurer que dans les paramètres vous autorisez MySQL et MariaDB
 
 3. Sur un navigateur, faites `localhost`.
-
-4. Vous devriez voir la page d'accueil de Wamp ou Xampp, ensuite cliquez sur phpmyadmin
+- Vous devriez voir la page d'accueil de Wamp ou Xampp, ensuite cliquez sur phpmyadmin
 
 5. Vous devriez atterir sur la page de connexion. 
-- Entrez comme identifiant root et laissez le mot de passe vide.
+- Entrez comme identifiant `root` et laissez le mot de passe vide.
 - Pour le choix de serveur prenez MariaDB.
 - Cliquez sur Connexion.
 
