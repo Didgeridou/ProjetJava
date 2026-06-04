@@ -11,9 +11,9 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 - vous devriez voir la version de Java, si vous avez Java 26 alors vous pouvez continuer.
 
 2. Installer WampServer ou Xampp
-- Exécuter WampServer, s'assurer que dans les paramètres vous autorisez MySQL et MariaDB
+- Exécuter WampServer ou Xampp, s'assurer que dans les paramètres vous autorisez MySQL et MariaDB
 
-3. Sur un navigateur, faites localhost.
+3. Sur un navigateur, faites `localhost`.
 
 4. Vous devriez voir la page d'accueil de Wamp ou Xampp, ensuite cliquez sur phpmyadmin
 
