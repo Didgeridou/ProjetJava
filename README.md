@@ -1,4 +1,4 @@
-# Projet Java — Gestion de Magasin  
+# Projet Java — Gestion de Magasin
 Application gestion de magasin réalisé avec Java + Swing + JDBC + MariaDB
 
 Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les éléments suivants sont installés et configurés :
