@@ -27,6 +27,9 @@ public class GestionProduitsFrame extends JFrame {
     private JTextField txtRecherche;
     private JComboBox<Categorie> comboCategorie;
 
+    /**
+     * Constructeur de la classe GestionProduitsFrame
+     */
     public GestionProduitsFrame() {
         setTitle("Gestion des produits");
         setSize(800, 600);
@@ -42,15 +45,17 @@ public class GestionProduitsFrame extends JFrame {
      * Initialisation des categories
      */
     private void chargerCategories() {
-    comboCategorie.removeAllItems();
-    List<Categorie> categories = categorieDAO.listerToutes();
+        comboCategorie.removeAllItems();
+        List<Categorie> categories = categorieDAO.listerToutes();
 
-    for (Categorie c : categories) {
-        comboCategorie.addItem(c);
-    }
-}
+        for (Categorie c : categories) {
+            comboCategorie.addItem(c);
+        }
+    } 
 
-
+    /**
+     * Initialisation des components pour le frame
+     */
     private void initComponents() {
         JPanel panelForm = new JPanel(new GridLayout(5, 2, 5, 5));
         txtNom = new JTextField();
@@ -109,6 +114,9 @@ public class GestionProduitsFrame extends JFrame {
         btnFaibleStock.addActionListener(this::onFaibleStock);
     }
 
+    /**
+     * Initialisation produits
+     */
     private void chargerProduits() {
         try {
             List<Produit> produits = produitDAO.listerTous();
@@ -118,6 +126,10 @@ public class GestionProduitsFrame extends JFrame {
         }
     }
 
+    /**
+     * Remplir la table
+     * @param produits
+     */
     private void remplirTable(List<Produit> produits) {
         tableModel.setRowCount(0);
         for (Produit p : produits) {
@@ -132,6 +144,10 @@ public class GestionProduitsFrame extends JFrame {
         }
     }
 
+    /**
+     * Affichage ajout nouveau produit
+     * @param e
+     */
     private void onAjouter(ActionEvent e) {
         try {
             String nom = txtNom.getText();
@@ -149,6 +165,10 @@ public class GestionProduitsFrame extends JFrame {
         }
     }
 
+    /**
+     * Affichage modification d'un produit
+     * @param e
+     */
     private void onModifier(ActionEvent e) {
         int row = tableProduits.getSelectedRow();
         if (row == -1) {
@@ -172,6 +192,10 @@ public class GestionProduitsFrame extends JFrame {
         }
     }
 
+    /**
+     * Affichage suppression d'un produit
+     * @param e
+     */
     private void onSupprimer(ActionEvent e) {
         int row = tableProduits.getSelectedRow();
         if (row == -1) {
@@ -191,6 +215,10 @@ public class GestionProduitsFrame extends JFrame {
         }
     }
 
+    /**
+     * Affichage du produit selon la recherche
+     * @param e
+     */
     private void onRecherche(ActionEvent e) {
         String motCle = txtRecherche.getText();
         try {
@@ -201,6 +229,10 @@ public class GestionProduitsFrame extends JFrame {
         }
     }
 
+    /**
+     * Affichage du produit qui ont un stock inférieur au seuil faible du stock
+     * @param e
+     */
     private void onFaibleStock(ActionEvent e) {
         String seuilStr = JOptionPane.showInputDialog(this, "Seuil de stock :");
         if (seuilStr == null) return;
@@ -213,6 +245,10 @@ public class GestionProduitsFrame extends JFrame {
         }
     }
 
+    /**
+     * Affichage erreur
+     * @param message
+     */
     private void afficherErreur(String message) {
         JOptionPane.showMessageDialog(this, message, "Erreur", JOptionPane.ERROR_MESSAGE);
     }

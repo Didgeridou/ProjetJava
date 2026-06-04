@@ -16,6 +16,12 @@ public class Caisse {
         this.idCaisse = idCaisse;
     }
 
+    /**
+     * ajouter le montant de la commande dans la caisse
+     * 
+     * @param commande
+     * @param montantRecu
+     */
     public void encaisser(Commande commande, double montantRecu) {
         double total = commande.getPrixTotal();
         if (montantRecu < total) {
@@ -24,6 +30,11 @@ public class Caisse {
         montantCaisse += total;
     }
 
+    /**
+     * Obtenir le montant de la caisse
+     * 
+     * @return montant de la caisse
+     */
     public double getMontantCaisse() {
         return montantCaisse;
     }

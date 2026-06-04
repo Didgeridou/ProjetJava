@@ -1,7 +1,7 @@
 package magasin;
 
 /**
- * Type de catégorie
+ * Les types de catégories
  */
 public enum TypeCategorie {
     ALIMENTAIRE,

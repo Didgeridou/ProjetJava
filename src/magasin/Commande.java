@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/***
- * Commande d'un client
- */
 public class Commande {
     private int idCommande;
     private List<Produit> produits = new ArrayList<>();
@@ -22,15 +19,27 @@ public class Commande {
         this.idCommande = idCommande;
     }
 
+    /**
+     * Ajouter un produit dans la commande
+     * @param p
+     */
     public void ajouterProduit(Produit p) {
         produits.add(p);
         prixTotal += p.getPrix();
     }
 
+    /**
+     * Avoir le prix total de la commande
+     * @return prix total de la commande
+     */
     public double getPrixTotal() {
         return prixTotal;
     }
 
+    /**
+     * Obtenir les produits de la commande
+     * @return produits de la commande
+     */
     public List<Produit> getProduits() {
         return produits;
     }
