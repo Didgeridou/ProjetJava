@@ -15,7 +15,7 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 
 5. Vous devriez atterir sur la page de connexion. 
 - Entrez comme identifiant `root` et laissez le mot de passe vide.
-- Pour le choix de serveur prenez MariaDB.
+- Pour le choix de serveur, prendre MariaDB.
 - Cliquez sur Connexion.
 
 6. Si cela a fonctionné, vous devriez voir l'interface phpmyadmin.
