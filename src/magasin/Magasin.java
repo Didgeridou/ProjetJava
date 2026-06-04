@@ -5,13 +5,23 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Magasin
+ */
 public class Magasin {
     private int idMagasin;
     private String nom;
     private List<Client> clients = new ArrayList<>();
     private Stock stock;
     private Caisse caisse;
-
+    
+    /**
+     * Constructeur de la classe Magasin
+     * @param idMagasin
+     * @param nom
+     * @param stock
+     * @param caisse
+     */
     public Magasin(int idMagasin, String nom, Stock stock, Caisse caisse) {
         this.idMagasin = idMagasin;
         this.nom = nom;

@@ -1,9 +1,17 @@
 package magasin;
 
+/**
+ * Caisse du magasin, représente le montant
+ */
 public class Caisse {
     private int idCaisse;
     private double montantCaisse;
 
+    /***
+     * Constructeur de la classe Caisse
+     * 
+     * @param idCaisse
+     */
     public Caisse(int idCaisse) {
         this.idCaisse = idCaisse;
     }
@@ -14,7 +22,6 @@ public class Caisse {
             throw new IllegalArgumentException("Montant insuffisant");
         }
         montantCaisse += total;
-        // gestion du rendu monnaie si besoin
     }
 
     public double getMontantCaisse() {

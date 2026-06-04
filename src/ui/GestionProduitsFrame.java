@@ -38,6 +38,9 @@ public class GestionProduitsFrame extends JFrame {
         chargerCategories();
     }
 
+    /**
+     * Initialisation des categories
+     */
     private void chargerCategories() {
     comboCategorie.removeAllItems();
     List<Categorie> categories = categorieDAO.listerToutes();
@@ -49,13 +52,12 @@ public class GestionProduitsFrame extends JFrame {
 
 
     private void initComponents() {
-        // Haut : formulaire
         JPanel panelForm = new JPanel(new GridLayout(5, 2, 5, 5));
         txtNom = new JTextField();
         txtPrix = new JTextField();
         txtQuantite = new JTextField();
         txtCode = new JTextField();
-        comboCategorie = new JComboBox<>(); // à remplir depuis la BD
+        comboCategorie = new JComboBox<>();
 
         panelForm.add(new JLabel("Nom :"));
         panelForm.add(txtNom);
@@ -68,12 +70,10 @@ public class GestionProduitsFrame extends JFrame {
         panelForm.add(new JLabel("Catégorie :"));
         panelForm.add(comboCategorie);
 
-        // Centre : tableau
         tableModel = new DefaultTableModel(new Object[]{"ID", "Nom", "Prix", "Quantité", "Code", "Catégorie"}, 0);
         tableProduits = new JTable(tableModel);
         JScrollPane scrollPane = new JScrollPane(tableProduits);
 
-        // Bas : boutons + recherche
         JPanel panelBas = new JPanel(new BorderLayout());
 
         JPanel panelBoutons = new JPanel();
@@ -97,13 +97,11 @@ public class GestionProduitsFrame extends JFrame {
         panelBas.add(panelBoutons, BorderLayout.WEST);
         panelBas.add(panelRecherche, BorderLayout.EAST);
 
-        // Layout global
         setLayout(new BorderLayout());
         add(panelForm, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
         add(panelBas, BorderLayout.SOUTH);
 
-        // Listeners
         btnAjouter.addActionListener(this::onAjouter);
         btnModifier.addActionListener(this::onModifier);
         btnSupprimer.addActionListener(this::onSupprimer);

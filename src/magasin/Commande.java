@@ -5,11 +5,19 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/***
+ * Commande d'un client
+ */
 public class Commande {
     private int idCommande;
     private List<Produit> produits = new ArrayList<>();
     private double prixTotal;
 
+    /***
+     * Constructeur de la classe Commande
+     * @param idCommande
+     */
     public Commande(int idCommande) {
         this.idCommande = idCommande;
     }

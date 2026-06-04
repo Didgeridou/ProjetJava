@@ -1,10 +1,21 @@
 package magasin;
 
+
+/****
+ * Catégorie à laquelle appartient un produit
+ */
 public class Categorie {
     private int idCategorie;
     private String nom;
     private TypeCategorie type;
 
+
+    /**Constructeur de la classe Categorie
+     * 
+     * @param idCategorie
+     * @param nom
+     * @param type
+     */
     public Categorie(int idCategorie, String nom, TypeCategorie type) {
         this.idCategorie = idCategorie;
         this.nom = nom;
@@ -39,7 +50,6 @@ public class Categorie {
     public String toString() {
         return nom;
     }
-
     
 }
 
