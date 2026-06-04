@@ -13,7 +13,7 @@ public class DBConnection {
     try {
         Class.forName("org.mariadb.jdbc.Driver");
     } catch (ClassNotFoundException e) {
-        e.printStackTrace();
+        e.printStackTrace(); // Pas de base de données
     }
 }
 

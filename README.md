@@ -30,3 +30,6 @@ Avant de lancer l'application (ou le fichier `.jar`), assurez-vous que les élé
 - La base de données magasin est créé, les tables sont créées et des données sont insérées dans les tables.
 
 3. Exécuter `ProjetJava-GestionMagasin.jar`
+
+### État du projet
+Fonctions basiques (ajout, supprimer, modifier) mais manque la partie Caisse, Commande, Fournisseur, Magasin
