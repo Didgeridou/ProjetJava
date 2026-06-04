@@ -2,6 +2,7 @@ package ui;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
+import dao.CategorieDAO;
 import dao.ProduitDAO;
 import magasin.Categorie;
 import magasin.Produit;
@@ -14,6 +15,7 @@ import java.util.List;
 public class GestionProduitsFrame extends JFrame {
 
     private ProduitDAO produitDAO = new ProduitDAO();
+    private CategorieDAO categorieDAO = new CategorieDAO();
 
     private JTable tableProduits;
     private DefaultTableModel tableModel;
@@ -33,7 +35,18 @@ public class GestionProduitsFrame extends JFrame {
 
         initComponents();
         chargerProduits();
+        chargerCategories();
     }
+
+    private void chargerCategories() {
+    comboCategorie.removeAllItems();
+    List<Categorie> categories = categorieDAO.listerToutes();
+
+    for (Categorie c : categories) {
+        comboCategorie.addItem(c);
+    }
+}
+
 
     private void initComponents() {
         // Haut : formulaire

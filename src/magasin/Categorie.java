@@ -35,6 +35,11 @@ public class Categorie {
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return nom;
+    }
+
     
 }
 
